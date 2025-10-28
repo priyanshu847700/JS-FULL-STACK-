@@ -24,4 +24,3 @@ console.log(typeof(IsloogedIn));
 console.log(typeof(Pass));                 //object!!
 console.log(typeof(undefined));            //undefined!!
 
-
