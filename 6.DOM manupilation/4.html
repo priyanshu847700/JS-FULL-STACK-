@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <ul class="lang">
+        <li>javascript</li>
+    </ul>
+
+</body>
+<script>
+    //ADDING NEW ELEMENT!!
+    function addlang(langname){
+        const li=document.createElement('li')
+        li.innerHTML=`${langname}`
+        document.querySelector('.lang').appendChild(li)
+    }
+    addlang("python");
+
+
+    function AddOptiLanguage(lang){
+        const li=document.createElement('li')
+        li.appendChild(document.createTextNode(lang))
+        document.querySelector('.lang').appendChild(li)
+    }
+    AddOptiLanguage("c++")
+
+
+    //EDIT!!
+    const edit=document.querySelector("li:nth-child(2)")
+    const newli=document.createElement('li')
+    newli.textContent="pop"
+    edit.replaceWith(newli);
+    
+
+    const firstlang=document.querySelector("li:first-child")
+    firstlang.outerHTML="<li>mongoose</li>"
+
+    //remove
+    const lastlang=document.querySelector("li:last-child")
+    lastlang.remove()
+    
+</script>
+</html>
