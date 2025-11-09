@@ -31,7 +31,7 @@ fxn1()
 // // *********   this is only used inside object not in fxn or any other  *********//
 
 
-//arroe fxn !!
+//arrow fxn !!
 const Chai = () => {
     let username= "priyanshu"
     console.log(this.username)            //undefined
